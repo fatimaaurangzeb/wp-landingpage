@@ -1,0 +1,94 @@
+/*!
+Theme Name: Blog World
+Theme URI: https://adorethemes.com/downloads/blog-world/
+Author: Adore Themes
+Author URI: https://adorethemes.com/
+Description: Blog World is a child theme of Blogic theme. It is lightweight, clean and minimal blog theme perfect for writers who need to create personal blog site with simple creative features and effects to make readers feel the pleasure of reading blog posts and articles. It’s also perfect for a fashion blog, lifestyle blog, travel blog, food blog, photography blog, and many more. It is designed and developed primarily to create professional blogging websites. It is fully responsive and works flawlessly on all types of devices like mobiles, tablets, laptops, and computers. It is a simple, easy-to-use, modern and creative, user-friendly WordPress theme. It’s ideal for all personal or professional lifestyle bloggers who are looking for stylish designs for their websites. The codes included in the theme are made SEO-friendly so that people can easily notice you and you get more visitors. The clean and secure HTML codes of this theme make your website function smoothly on several platforms and as these are optimized codes, your website will have a faster page load time to load quickly. Live preview : https://demo.adorethemes.com/blog-world/
+Version: 1.0.0
+Requires at least: 5.0
+Requires PHP: 5.6
+Tested up to: 6.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: blogic
+Text Domain: blog-world
+Tags: custom-background, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, right-sidebar, blog, one-column, portfolio, photography, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Blog World is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* Start archive layouts
+--------------------------------------------- */
+
+/* list layout */
+.theme-archive-layout.list-layout {
+	display: grid;
+	gap: 30px;
+	margin-bottom: 50px;
+}
+
+.theme-archive-layout.list-layout article {
+	margin-bottom: 0;
+}
+
+.theme-archive-layout.list-layout article .post-item.post-list {
+	border: none;
+}
+
+@media (min-width: 600px) {
+	.theme-archive-layout.list-layout.list-style-4 {
+		gap: 50px;
+	}
+
+	.theme-archive-layout.list-layout.list-style-4 article .post-item.post-list {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		min-height: 450px;
+		padding: 50px 0;
+		background: transparent;
+		border: none;
+	}
+
+	.theme-archive-layout.list-layout.list-style-4 article .post-item.post-list .post-item-image {
+		position: absolute;
+		height: 100%;
+		width: calc(60% - 50px);
+		background-size: cover;
+		background-position: 50%;
+		left: 0;
+		top: 0;
+		max-width: none;
+	}
+
+	.theme-archive-layout.list-layout.list-style-4 article .post-item.post-list .post-item-content {
+		flex-grow: 0;
+		position: relative;
+		z-index: 2;
+		width: 50%;
+		padding: 30px;
+		background-color: #fafafa;
+	}
+
+	.theme-archive-layout.list-layout.list-style-4 article:nth-child(even) .post-item.post-list {
+		flex-direction: row-reverse;
+	}
+
+	.theme-archive-layout.list-layout.list-style-4 article:nth-child(even) .post-item.post-list .post-item-image {
+		left: unset;
+		right: 0;
+	}
+}
+
+/* list layout */
+
+/* End archive layouts
+--------------------------------------------- */
